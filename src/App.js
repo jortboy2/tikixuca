@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  // Map visible denominations to product IDs
   const denominationMap = {
     "200k": "1559583",
     "300k": "7321981",
@@ -20,14 +19,12 @@ function App() {
 
   const [denomination, setDenomination] = useState("200k");
   const [productId, setProductId] = useState(denominationMap["200k"]);
-  // Email and payment method are fixed/hidden in the UI per request
-  const email = "vonghung849@gmail.com";
+  const email = "vukhoong@gmail.com";
   const paymentMethod = "momo";
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [preConfirm, setPreConfirm] = useState(false);
 
-  // (optional) receipt upload kept out for now
 
   const handleSubmit = async () => {
     setLoading(true);
