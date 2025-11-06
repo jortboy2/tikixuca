@@ -19,7 +19,7 @@ function App() {
 
   const [denomination, setDenomination] = useState("200k");
   const [productId, setProductId] = useState(denominationMap["200k"]);
-  const email = "vukhoong@gmail.com";
+  const email = "catrannguyen623@gmail.com";
   const paymentMethod = "momo";
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
